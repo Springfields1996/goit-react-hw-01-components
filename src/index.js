@@ -1,17 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import { App } from "./components/App";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// class Counter extends Component {
+//   static defaultProps = {
+//     step: 1,
+//   };
+
+//   render() {
+//     const { step } = this.props;
+
+//     return (
+//       <div>
+//         <span>0</span>
+//         <button type="button">Increment by {step}</button>
+//         <button type="button">Decrement by {step}</button>
+//       </div>
+//     );
+//   }
+// }
+
+// ReactDOM.render(<Counter step={5} />, document.getElementById("root"));
